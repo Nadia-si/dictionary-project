@@ -1,27 +1,29 @@
 import React from "react";
 import Synonyms from "./Synonyms";
 import Examples from "./Examples";
+import "./Results.css";
 
 export default function Results(props) {
   //console.log(props.result);
   if (props.result) {
     return (
       <div className="Results">
-        <h2>{props.result.word}</h2>
-        <p>{props.result.phonetic}</p>
+        <section>
+          <h2>{props.result.word}</h2>
+          <p className="Phonetic">{props.result.phonetic}</p>
+        </section>
         {props.result.meanings.map(function (meaning, index) {
           return (
-            <div key={index}>
+            <section key={index}>
               <h3>{meaning.partOfSpeech}</h3>
               <p>
-                <strong>Definition: </strong>
                 {meaning.definition}
                 <br />
                 <Examples example={meaning.example} />
                 <br />
                 <Synonyms synonyms={meaning.synonyms} />
               </p>
-            </div>
+            </section>
           );
         })}
       </div>
