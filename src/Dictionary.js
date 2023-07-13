@@ -17,6 +17,7 @@ export default function Dictionary(props) {
     //console.log(response.data.photos);
     setPhotos(response.data.photos);
   }
+
   function search() {
     //Documentation: https://www.shecodes.io/learn/apis/dictionary
     let apiKey = "c4b3dfaa8904f4of737ct5948a4098ce";
@@ -50,11 +51,12 @@ export default function Dictionary(props) {
               type="search"
               onChange={handleSearch}
               defaultValue={props.defaultKeyword}
+              placeholder="Search for a word"
+              class="form-control"
+              autoComplete="off"
             />
           </form>
-          <div className="hint">
-            Suggested word: love, peace, harmony, sunrise, yoga, wine...
-          </div>
+          <div className="hint">i.e. peace, coding, yoga...</div>
         </section>
         <Results result={results} />
         <Photos photos={photos} />

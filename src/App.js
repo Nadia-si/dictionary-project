@@ -7,6 +7,9 @@ export default function App() {
     <div className="App">
       <div className="container">
         <header className="App-header">
+          <h1 className="heading text-center">
+            <em>Dictionary</em>
+          </h1>
           <img
             src={dictionary}
             className="App-image img-fluid"
@@ -17,7 +20,24 @@ export default function App() {
           <Dictionary defaultKeyword="sunset" />
         </main>
         <footer className="App-footer">
-          <small>Coded by Nadia Simbi</small>
+          <small>
+            This project was coded by Nadia Simbi and is open-sourced on{" "}
+            <a
+              href="https://github.com/Nadia-si/dictionary-project"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>{" "}
+            and hosted on{" "}
+            <a
+              href="https://chipper-genie-2b71d0.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Netlify
+            </a>
+          </small>
         </footer>
       </div>
     </div>
