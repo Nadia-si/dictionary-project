@@ -1,8 +1,9 @@
 import React from "react";
+import "./Examples.css";
 
 export default function Examples(props) {
   if (props.example) {
-    return <em className="Examples text-muted mt-5">{props.example}</em>;
+    return <p className="Examples">{props.example}</p>;
   } else {
     return null;
   }

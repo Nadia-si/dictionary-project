@@ -4,7 +4,6 @@ import Examples from "./Examples";
 import "./Results.css";
 
 export default function Results(props) {
-  //console.log(props.result);
   if (props.result) {
     return (
       <div className="Results">
@@ -16,11 +15,10 @@ export default function Results(props) {
           return (
             <section key={index}>
               <h3>{meaning.partOfSpeech}</h3>
-              <p>
+              <p className="Meaning">
                 {meaning.definition}
                 <br />
                 <Examples example={meaning.example} />
-                <br />
                 <Synonyms synonyms={meaning.synonyms} />
               </p>
             </section>

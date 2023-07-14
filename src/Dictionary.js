@@ -14,7 +14,6 @@ export default function Dictionary(props) {
   }
 
   function handleImageResponse(response) {
-    //console.log(response.data.photos);
     setPhotos(response.data.photos);
   }
 
@@ -56,7 +55,7 @@ export default function Dictionary(props) {
               autoComplete="off"
             />
           </form>
-          <div className="hint">i.e. peace, coding, yoga...</div>
+          <div className="hint">i.e. peace, coding, yoga, canada...</div>
         </section>
         <Results result={results} />
         <Photos photos={photos} />

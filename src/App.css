@@ -1,5 +1,6 @@
 body {
   background: #f9f8fe;
+  font-family: arial, sans-serif;
 }
 
 .App {
@@ -24,4 +25,10 @@ a {
 .App-footer {
   margin: 30px 0;
   text-align: center;
+}
+
+.App .Heading {
+  text-align: center;
+  font-weight: 600;
+  font-style: italic;
 }
